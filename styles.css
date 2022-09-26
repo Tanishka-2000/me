@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+body{
+    background-image: url('girl.jpg');
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+nav{
+    position: relative;
+    transform: rotate(-30deg) translate(80px,-230px);
+}
+nav a{
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    border: 1px solid #555;
+    transition: transform 700ms ease;
+    color: #777;
+    font-size: 2rem;
+}
+nav a:nth-of-type(1){
+    width: 500px;
+    left: 500px;
+}
+nav a:nth-of-type(2){
+    height: 450px;
+    top: 350px;
+    left: 1000px;
+}
+nav a:nth-of-type(3){
+    height: 450px;
+    top: 800px;
+}
+nav a:nth-of-type(4){
+    width: 500px;
+    top: 800px;
+    left: 800px;
+}
+nav a:hover, a:focus{
+    transform: scale(.95);
+    box-shadow: 0 0 15px 3px #666;
+    outline: none;
+    color: #ccc;
+}
+/* body{
+    background-image: url('girl.jpg');
+    background-size: cover;
+    background-position: center;
+
+
+}
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+}
+nav{
+    position: relative;
+    transform: translate(500px, -270px) rotate(-26deg);
+}
+nav a{
+    border: 1px solid #555;
+    position: absolute;
+    transition: transform 500ms ease;
+    color: #777;
+    font-size: 2rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav a:hover, a:focus{
+    transform: scale(.92);
+    box-shadow: 0 0 15px 3px #666;
+    outline: none;
+    color: #ccc;
+}
+nav a:hover > div, a:focus > div{
+    transform: rotate(26deg) scale(1.2);
+
+}
+
+nav a:nth-of-type(1){
+    width: 400px;
+    height: 600px;
+}
+nav a:nth-of-type(2){
+    width: 600px;
+    height: 400px;
+    top: 200px;
+    left: 400px;
+}
+nav a:nth-of-type(3){
+    width: 600px;
+    height: 400px;
+    top: 600px;
+}
+nav a:nth-of-type(4){
+    width: 400px;
+    height: 600px;
+    top: 600px;
+    left: 600px;
+}
+nav>a>div>span{
+    display: block;
+    text-decoration: underline;
+}
+nav a div{
+    transition: transform 500ms ease;
+    transform: rotate(26deg);
+    font-weight: 300;
+} */
+
+/* -------------main------------ */
+/* main{
+    position: relative;
+} */
+/* section.heading{
+    max-width: 600px;
+    max-height: 600px;
+    margin: 400px 0 0 200px;
+    color: #ccc;
+    font-size: 2rem;
+}
+.heading h1>span{
+    display: block;
+}
+.heading > p{
+    font-weight: 300;
+}
+
+section.project{
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    transition: transform 700ms ease;
+    transform: translateX(50vw);
+    display: none;
+}
+section.project.show{
+    display: block;
+    transform: translateX(0vw);
+} */
