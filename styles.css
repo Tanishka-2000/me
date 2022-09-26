@@ -115,8 +115,7 @@ section.projects{
     transform: translateX(1920px);
     transition: transform 300ms ease;
     display: none;
-    padding:50px;
-    text-align: center;
+    padding:20px;
     color: #444;
     overflow-y: scroll;
 }
@@ -125,25 +124,30 @@ section.projects.show{
     transform: translateX(1030px);
 
 }
-/* section.projects#games{
+section.projects#games{
     display: block;
     transform: translateX(1030px);
-} */
+}
 button.close-btn{
     position: absolute;
     border: none;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     top: 5px;
     right: 15px;
     background-color: transparent;
+    color: #444;
+}
+button.close-btn:hover{
+    color: #000;
 }
 section.projects>h1{
+    text-align: center;
     margin-bottom: 40px;
 }
 .container2{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 20px;
 }
 .card{
     border-radius: 5px;
@@ -157,6 +161,23 @@ section.projects>h1{
     border-top-right-radius: 5px;
     overflow: hidden;
 }
+
 .card .image img{
     width: 100%;
+}
+.card .description{
+    padding: 10px 20px;
+}
+.card .project-name{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+        margin-bottom: 10px;
+}
+.card .project-name span a{
+    font-size: 2rem;
+    color: #444;
+}
+.card .project-name span a:hover{
+    color: #000;
 }
