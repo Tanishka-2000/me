@@ -1,13 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 body{
     background-image: url('girl.jpg');
     background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .container{
     background-color: rgba(0, 0, 0,.8);
@@ -29,6 +29,7 @@ nav div{
     font-size: 2rem;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 nav div:nth-of-type(1){
     width: 500px;
@@ -59,18 +60,20 @@ nav div:hover a{
 }
 nav div span{
     display: block;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #777;
 }
 nav div:nth-of-type(1) a{
-    transform:rotate(30deg) translate(60px,500px);
+    transform:rotate(30deg) translate(60px,200px);
 }
 nav div:nth-of-type(2) a{
-    transform:rotate(30deg) translate(-130px,350px);
+    transform:rotate(30deg) translate(-130px,150px);
 }
 nav div:nth-of-type(3) a{
-    transform:rotate(30deg) translate(100px,110px);
+    transform:rotate(30deg) translate(100px,-150px);
 }
 nav div:nth-of-type(4) a{
-    transform:rotate(30deg) translate(-150px,200px);
+    transform:rotate(30deg) translate(-140px,-190px);
 }
 nav a{
     color: #555;
@@ -78,35 +81,65 @@ nav a{
 }
 
 /* -------------main------------ */
-/* main{
-    position: relative;
-} */
-/* section.heading{
-    max-width: 600px;
-    max-height: 600px;
-    margin: 400px 0 0 200px;
-    color: #ccc;
+main{
+    max-width: 40vw;
+    height: 100vh;
+    display: flex;;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
     font-size: 2rem;
 }
-.heading h1>span{
+section.heading{
+    max-width: 600px;
+    /* padding-left: 50px; */
+}
+section.heading span{
+    padding: 100px auto;
     display: block;
 }
-.heading > p{
+section.heading p{
     font-weight: 300;
 }
-
-section.project{
-    width: 50vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: white;
-    transition: transform 700ms ease;
-    transform: translateX(50vw);
-    display: none;
+section.heading p.about{
+    font-size: 1.5rem;
+    margin-top: 50px;
 }
-section.project.show{
+/* -----------projects ------------ */
+section.projects{
+    width: 1000px;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    transform: translateX(1920px);
+    transition: transform 300ms ease;
+    display: none;
+    padding:50px;
+}
+section.projects.show{
     display: block;
-    transform: translateX(0vw);
-} */
+    transform: translateX(1030px);
+
+}
+section.projects#games{
+    display: block;
+    transform: translateX(1030px);
+}
+
+.container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.card{
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 5px #ccc;
+    font-size: 1.4rem;
+}
+.card .image{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.card .image img{
+    width: 100%;
+}
