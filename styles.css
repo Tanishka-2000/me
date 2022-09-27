@@ -110,13 +110,15 @@ section.heading p.about{
 section.projects{
     width: 1000px;
     height: 100vh;
-    background-color: white;
+    background-color: #eee;
+    /* background-color: #111; */
     position: absolute;
     transform: translateX(1920px);
     transition: transform 300ms ease;
     display: none;
     padding:20px;
     color: #444;
+    /* color: #ccc; */
     overflow-y: scroll;
 }
 section.projects.show{
@@ -124,21 +126,23 @@ section.projects.show{
     transform: translateX(1030px);
 
 }
-section.projects#games{
+/* section.projects#games{
     display: block;
     transform: translateX(1030px);
-}
+} */
 button.close-btn{
     position: absolute;
     border: none;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     top: 5px;
     right: 15px;
     background-color: transparent;
     color: #444;
+    /* color: #ccc; */
 }
 button.close-btn:hover{
     color: #000;
+    /* color: #fff; */
 }
 section.projects>h1{
     text-align: center;
@@ -147,11 +151,11 @@ section.projects>h1{
 .container2{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 30px;
 }
 .card{
     border-radius: 5px;
-    box-shadow: 1px 1px 5px 5px #ccc;
+    box-shadow: 1px 1px 5px 5px #aaa;
     font-size: 1.4rem;
 }
 .card .image{
@@ -177,7 +181,9 @@ section.projects>h1{
 .card .project-name span a{
     font-size: 2rem;
     color: #444;
+    /* color: #ccc; */
 }
 .card .project-name span a:hover{
     color: #000;
+    /* color: #fff; */
 }
