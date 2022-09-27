@@ -83,7 +83,7 @@ nav a{
 
 /* -------------main------------ */
 main{
-    max-width: 40vw;
+    width: 40vw;
     height: 100vh;
     display: flex;;
     justify-content: center;
@@ -92,8 +92,8 @@ main{
     font-size: 2rem;
 }
 section.heading{
-    max-width: 600px;
-    /* padding-left: 50px; */
+    width: 600px;
+    padding: 30px;
 }
 section.heading span{
     padding: 100px auto;
@@ -104,7 +104,13 @@ section.heading p{
 }
 section.heading p.about{
     font-size: 1.5rem;
+    margin-top: 30px;
+}
+
+section.heading .contact{
     margin-top: 50px;
+    font-size: 1.3rem;
+    line-height: 2;
 }
 /* -----------projects ------------ */
 section.projects{
@@ -186,4 +192,8 @@ section.projects>h1{
 .card .project-name span a:hover{
     color: #000;
     /* color: #fff; */
+}
+/* ============media query======== */
+@media(max-width:800px){
+
 }
