@@ -36,40 +36,40 @@
                 <section class="navigation">
                     <div class='nav-first-row'>
                     
-                        <a class='nav-box one' href="#">
+                        <div class='nav-box one' onclick="showDiv(about)" tabindex="0">
                             <div>
                                 <p>01</p>
                                 <hr />
                                 <p>About</p>
                             </div>
-                        </a>
+                        </div>
                     
-                        <a class='nav-box two' href="#">
+                        <div class='nav-box two' onclick="showDiv(blog)" tabindex="0">
                             <div>
                                 <p>02</p>
                                 <hr />
                                 <p>Blog</p>
                             </div>
-                        </a>
+                        </div>
                     
                     </div>
                     <div class='nav-second-row'>
                     
-                        <a class='nav-box three' href="#">
+                        <div class='nav-box three' onclick="showDiv(portfolio)" tabindex="0">
                             <div>
                                 <p>03</p>
                                 <hr />
                                 <p>Portfolio</p>
                             </div>
-                        </a>
+                        </div>
                     
-                        <a class='nav-box four' href="#">
+                        <div class='nav-box four' onclick="showDiv(skills)" tabindex="0">
                             <div>
                                 <p>04</p>
                                 <hr />
                                 <p>Skills</p>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     
                 </section>
@@ -77,28 +77,28 @@
                 <section class='links'>
                     <div id='about'>
                         <div class="header">
-                            <button class='back-btn'><i class="fa-solid fa-circle-arrow-left"></i></button>
+                            <button class='back-btn' onclick="hideDiv(about)"><i class="fa-solid fa-circle-arrow-left"></i></button>
                             <h2>About</h2>
                         </div>
                     </div>
 
                     <div id='blog'>
                         <div class="header">
-                            <button class='back-btn'><i class="fa-solid fa-circle-arrow-left"></i></button>
+                            <button class='back-btn' onclick="hideDiv(blog)"><i class="fa-solid fa-circle-arrow-left"></i></button>
                             <h2>Blog</h2>
                         </div>
                     </div>
 
                     <div id='portfolio'>
                         <div class="header">
-                            <button class='back-btn'><i class="fa-solid fa-circle-arrow-left"></i></button>
+                            <button class='back-btn' onclick="hideDiv(portfolio)"><i class="fa-solid fa-circle-arrow-left"></i></button>
                             <h2>Portfolio</h2>
                         </div>
                     </div>
 
                     <div id='skills'>
                         <div class="header">
-                            <button class='back-btn'><i class="fa-solid fa-circle-arrow-left"></i></button>
+                            <button class='back-btn' onclick="hideDiv(skills)"><i class="fa-solid fa-circle-arrow-left"></i></button>
                             <h2>Skills</h2>
                         </div>
                     </div>
