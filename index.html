@@ -1,42 +1,42 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang='en' dir='ltr'>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="styles.css">
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='preconnect' href='https://fonts.googleapis.com'>
+        <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+        <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap' rel='stylesheet'>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css' integrity='sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==' crossorigin='anonymous' referrerpolicy='no-referrer' />
+        <link rel='stylesheet' href='styles.css'>
         <title>personal portfolio</title>
     </head>
     <body>
-        <div class="container">
+        <div class='container'>
          
-                <section class="heading">
-                    <!-- <div class="center"> -->
+                <section class='heading'>
+                    <!-- <div class='center'> -->
                         <div>
                             <h1>
                                 <span>Hi,</span>
                                 I'm Tanishka Talwar
                             </h1>
-                            <p>a web developer</p>
-                            <p class="about">I love creating beautiful sites and solving problems with code.
+                            <p>Fullstack developer</p>
+                            <p class='about'>I love creating beautiful sites and solving problems with code.
                             I also like to travel the world and explore different cultures and people.</p>
                         </div>
-                        <div class="contact">
+                        <div class='contact'>
                             <h2>Contact me</h2>
                             <p>Please get in touch if you think our work can be mutually beneficail.</p>
-                            <p><i class="fa-solid fa-phone"></i> 8630755140</p>
-                            <p><i class="fa-solid fa-envelope"></i> tanishkatalwar18@gmail.com</p>
+                            <p><i class='fa-solid fa-phone'></i> 8630755140</p>
+                            <p><i class='fa-solid fa-envelope'></i> tanishkatalwar18@gmail.com</p>
                         </div>
                     <!-- </div>     -->
                 </section>
 
-                <section class="navigation">
+                <section class='navigation'>
                     <div class='nav-first-row'>
                     
-                        <div class='nav-box one' onclick="showDiv(about)" tabindex="0">
+                        <div class='nav-box one' onclick='showDiv(about)' tabindex='0'>
                             <div>
                                 <p>01</p>
                                 <hr />
@@ -44,7 +44,7 @@
                             </div>
                         </div>
                     
-                        <div class='nav-box two' onclick="showDiv(blog)" tabindex="0">
+                        <div class='nav-box two' onclick='showDiv(blog)' tabindex='0'>
                             <div>
                                 <p>02</p>
                                 <hr />
@@ -55,15 +55,15 @@
                     </div>
                     <div class='nav-second-row'>
                     
-                        <div class='nav-box three' onclick="showDiv(portfolio)" tabindex="0">
+                        <div class='nav-box three' onclick='showDiv(projects)' tabindex='0'>
                             <div>
                                 <p>03</p>
                                 <hr />
-                                <p>Portfolio</p>
+                                <p>Projects</p>
                             </div>
                         </div>
                     
-                        <div class='nav-box four' onclick="showDiv(skills)" tabindex="0">
+                        <div class='nav-box four' onclick='showDiv(skills)' tabindex='0'>
                             <div>
                                 <p>04</p>
                                 <hr />
@@ -76,35 +76,118 @@
 
                 <section class='links'>
                     <div id='about'>
-                        <div class="header">
-                            <button class='back-btn' onclick="hideDiv(about)"><i class="fa-solid fa-circle-arrow-left"></i></button>
+                        <div class='header'>
+                            <button class='back-btn' onclick='hideDiv(about)'><i class='fa-solid fa-circle-arrow-left'></i></button>
                             <h2>About</h2>
+                        </div>
+                        <div class='intro'>
+                            <div class='name'>
+                                <h1>
+                                    <span class='bold'>Tanishka</span>
+                                    Talwar
+                                </h1>
+                            </div>
+                            <img src='images/flowers.jpg' alt='Flowers Image' />
+                        </div>
+                        <p class='about'>
+                            If I am to define myself in two words that would be curious and grateful. That is how I percieve
+                            the world, with curiosity and gratefulness. That curiosity about computers had lead me to the love
+                            of my life 'coding'. Coding is something that sets me free. When I code it feels like I am in a
+                            whole new world of my own with the power of creating anything at my fingertips. I would love to
+                            have a chance to use my skills to create a difference in the world. This is something I would still
+                            be doing even if I have all the wealth in the world.
+                        </p>
+                        <div class='contact'>
+                            <div>
+                                <h2>Where to find me ?</h2>
+                                <p>Saharanpur, Uttar Pradesh</p>
+                                <p>8630755140</p>
+                                <p>tanishkatalwar18@gmail.com</p>
+                            </div>
                         </div>
                     </div>
 
                     <div id='blog'>
-                        <div class="header">
-                            <button class='back-btn' onclick="hideDiv(blog)"><i class="fa-solid fa-circle-arrow-left"></i></button>
+                        <div class='header'>
+                            <button class='back-btn' onclick='hideDiv(blog)'><i class='fa-solid fa-circle-arrow-left'></i></button>
                             <h2>Blog</h2>
                         </div>
                     </div>
 
-                    <div id='portfolio'>
-                        <div class="header">
-                            <button class='back-btn' onclick="hideDiv(portfolio)"><i class="fa-solid fa-circle-arrow-left"></i></button>
-                            <h2>Portfolio</h2>
+                    <div id='projects'>
+                        <div class='header'>
+                            <button class='back-btn' onclick='hideDiv(projects)'><i class='fa-solid fa-circle-arrow-left'></i></button>
+                            <h2>Projects</h2>
                         </div>
+                        
+                        <!-- <div class='projects-container'> -->
+                            <p class='meta'>These are some of the projects that I built during my learning journey. To see more 
+                                projects, you can check out my portfolio.
+
+                            </p>
+                            <div class='project'>
+                                <img src='images/odinbook2.png' alt='project' />
+                                <div>
+                                    <h2>Odinbook</h2>
+                                    <p>
+                                        This is an attempt to create a facebook clone with only core functionalities. The frontend of
+                                        this project is created using React and also supports client side routing, while for backend
+                                        I have used node along with express to create REST APIs. This project is created using
+                                        JAMstack architecture.
+                                    </p>
+                                    <p class='project-links'>
+                                        <a><i class='fa-brands fa-github'></i></a>
+                                        <a><i class='fa-solid fa-arrow-up-right-from-square'></i></a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class='project'>                               
+                                <div>
+                                    <h2>Inventory App</h2>
+                                    <p>
+                                        This is a fullstack application which lets you manage your inventory for a grocery store. Home
+                                        page of this app provide you with a list of categories to view. You can inspect and update any
+                                        category. Basically this app let you perform all four CRUD operations on each food category and
+                                        on each food item under any category. It uses node along with express to serve pages and ejs as
+                                        view engine.
+                                    </p>
+                                    <p class='project-links'>
+                                        <a><i class='fa-brands fa-github'></i></a>
+                                        <a><i class='fa-solid fa-arrow-up-right-from-square'></i></a>
+                                    </p>
+                                </div>
+                                <img src='images/inventory.png' alt='project' />
+                            </div>
+
+                            <div class='project'>   
+                                <img src='images/airbnb.png' alt='project' />                            
+                                <div>
+                                    <h2>Airbnb Clone</h2>
+                                    <p>
+                                        This is a frontend project. I have tried to replicate the UI of airbnb website. It is a single
+                                        page application (SPA) along with client side routing created using React. I have used a third
+                                        party APIs to fetch hotels data and images. This site allows you to search hotels of any place
+                                        using search bar or selecting any category from scrollbar.
+                                    </p>
+                                    <p class='project-links'>
+                                        <a><i class='fa-brands fa-github'></i></a>
+                                        <a><i class='fa-solid fa-arrow-up-right-from-square'></i></a>
+                                    </p>
+                                </div>                             
+                            </div>
+                        <!-- </div> -->
                     </div>
 
                     <div id='skills'>
-                        <div class="header">
-                            <button class='back-btn' onclick="hideDiv(skills)"><i class="fa-solid fa-circle-arrow-left"></i></button>
+                        <div class='header'>
+                            <button class='back-btn' onclick='hideDiv(skills)'><i class='fa-solid fa-circle-arrow-left'></i></button>
                             <h2>Skills</h2>
                         </div>
                     </div>
                 </section>
         </div>
-        <script src="script.js" defer charset="utf-8"></script>
+        <script src='script.js' defer charset='utf-8'></script>
     </body>
 </html>
 <!-- games = where's waldo, rock paper dcissors, maemory card, battleship, tic-tac-toe -->

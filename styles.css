@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url('girl.jpg');
+    background-image: url('images/girl.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -368,86 +368,112 @@ section.heading .contact{
     flex-grow: 1;
 }
 
-/* old style */
- /* .navigation{
-    position: absolute;
-    border: 1px solid #fff;
-    transform: rotate(-30deg) translate(-80px,250px);
+/* -------------about------------- */
+
+#about{
+    overflow-y: scroll;
 }
 
-.navigation div{
-    position: absolute;
-    width: 800px;
-    height: 800px;
-    border: 1px solid #555;
-    transition: transform 700ms ease;
-    color: #333;
-    font-size: 2rem;
+#about .intro{
     display: flex;
     justify-content: center;
+    gap: 50px;
+    margin: 20px 0;
+}
+
+#about .intro .name{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-}
-.navigation div:nth-of-type(1){
-    width: 500px;
-    left: 500px;
-}
-.navigation div:nth-of-type(2){
-    height: 450px;
-    top: 350px;
-    left: 1000px;
-}
-.navigation div:nth-of-type(3){
-    height: 450px;
-    top: 800px;
-}
-.navigation div:nth-of-type(4){
-    width: 500px;
-    top: 800px;
-    left: 800px;
+    justify-content: center;
+    font-size: 2rem;
 }
 
- .navigation div:hover{
-    transform: scale(.95);
-    box-shadow: 0 0 20px 10px #333;
-    outline: none;
-    color: #ccc;
-}
-.navigation div:hover a{
-    color: #777;
-}
-
-.navigation div p{
-    transition: transform 500ms ease;
-}
-
-.navigation div:hover p:nth-child(1){
-    transform: translateX(-50px);
-}
-.navigation div:hover p:nth-child(3){
-    transform: translateY(-40px);
-}
-
-.navigation div a hr{
-    border-color: #777;
-} */
-/* .navigation div span{
-    display: block;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #777;
-} */
- /* .navigation div:nth-of-type(1) a{
-    transform:rotate(30deg) translate(60px,200px);
-}
-.navigation div:nth-of-type(2) a{
-    transform:rotate(30deg) translate(-130px,150px);
-}
-.navigation div:nth-of-type(3) a{
-    transform:rotate(30deg) translate(100px,-150px);
-}
-.navigation div:nth-of-type(4) a{
-    transform:rotate(30deg) translate(-140px,-190px);
-}
-.navigation a{
+#about .intro .name h1{
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding: 20px 0;
+    width: 90%;
+    font-weight: 500;
     color: #555;
-    text-decoration: none;
-}  */
+}
+
+#about .intro .name h1 span{
+    color: #000;
+    font-weight: 700;
+}
+
+#about .intro img{
+    width: 400px;
+}
+
+#about p.about{
+    padding: 20px;
+    font-size: 1.3rem;
+    letter-spacing: 1.1px;
+    line-height: 1.5;
+}
+
+#about .contact{
+    background-image: url('images/map.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#about .contact > div{
+    background-color: rgba(225, 225, 225, .2);
+    padding: 50px 0;
+    color: #000;
+}
+
+#about .contact h2{
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+#about .contact p{
+    padding: 0;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+/* ---------projects------- */
+
+#projects{
+    overflow-y: scroll;
+}
+
+#projects p.meta{
+    width: 80%;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 30px auto;
+}
+
+#projects .project{
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    margin: 80px 10px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    gap: 20px;
+}
+
+#projects .project h2{
+    margin: 20px 0;
+}
+
+#projects .project img{
+    width: 400px;
+}
+
+#projects .project p.project-links{
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+}
