@@ -12,284 +12,293 @@
     </head>
     <body>
         <div class='container'>
+            <nav class='mobile-nav'>
+                <li>
+                    <a href='#about'>about</a>
+                </li>
+                <li>
+                    <a href='#skills'>skills</a>
+                </li>
+                <li>
+                    <a href='#projects'>projects</a>
+                </li>
+                <li>
+                    <a href='blog'>blog</a>
+                </li>
+
+            </nav>
          
-                <section class='heading'>
-                    <!-- <div class='center'> -->
+            <section class='heading'>
+                    <div>
+                        <h1>Hi,<br />I'm Tanishka Talwar</h1>
+                        <p  class='title'>A Fullstack developer</p>
+                        <p class='about'>Let us use our skills and blessings to create solutions that leave lasting effects on world.
+                            If you find my work admiring and believe our work can be mutually benificial, please contact me.</p>
+                    </div>
+                    
+                    <div class='social'>
+                        <a href='https://www.linkedin.com/in/tanishka-talwar-682886264/' target='_blank'><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href='https://github.com/Tanishka-2000' target='_blank'><i class="fa-brands fa-github"></i></a>
+                        <a href='https://www.facebook.com/profile.php?id=100089235616923' target='_blank'><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+            </section>
+
+            <section class='navigation'>
+                <div class='nav-first-row'>
+                
+                    <div class='nav-box one' onclick='showDiv(about)' tabindex='0'>
                         <div>
-                            <h1>
-                                <span>Hi,</span>
-                                I'm Tanishka Talwar
-                            </h1>
-                            <p>Fullstack developer</p>
-                            <p class='about'>I love creating beautiful sites and solving problems with code.
-                            I also like to travel the world and explore different cultures and people.</p>
-                        </div>
-                        <!-- <div class='contact'>
-                            <h2>Contact me</h2>
-                            <p>Please get in touch if you think our work can be mutually beneficail.</p>
-                            <p><i class='fa-solid fa-phone'></i> 8630755140</p>
-                            <p><i class='fa-solid fa-envelope'></i> tanishkatalwar18@gmail.com</p>
-                        </div> -->
-                    <!-- </div>     -->
-                </section>
-
-                <section class='navigation'>
-                    <div class='nav-first-row'>
-                    
-                        <div class='nav-box one' onclick='showDiv(about)' tabindex='0'>
-                            <div>
-                                <p>01</p>
-                                <hr />
-                                <p>About</p>
-                            </div>
-                        </div>
-                    
-                        <div class='nav-box two' onclick='showDiv(blog)' tabindex='0'>
-                            <div>
-                                <p>02</p>
-                                <hr />
-                                <p>Blog</p>
-                            </div>
-                        </div>
-                    
-                    </div>
-                    <div class='nav-second-row'>
-                    
-                        <div class='nav-box three' onclick='showDiv(projects)' tabindex='0'>
-                            <div>
-                                <p>03</p>
-                                <hr />
-                                <p>Projects</p>
-                            </div>
-                        </div>
-                    
-                        <div class='nav-box four' onclick='showDiv(skills)' tabindex='0'>
-                            <div>
-                                <p>04</p>
-                                <hr />
-                                <p>Skills</p>
-                            </div>
+                            <p>01</p>
+                            <hr />
+                            <p>About</p>
                         </div>
                     </div>
-                    
-                </section>
-
-                <section class='links'>
-                    <div id='about'>
-                        <div class='header'>
-                            <button class='back-btn' onclick='hideDiv(about)'><i class='fa-solid fa-circle-arrow-left'></i></button>
-                            <h2>About</h2>
+                
+                    <div class='nav-box two' onclick='showDiv(blog)' tabindex='0'>
+                        <div>
+                            <p>02</p>
+                            <hr />
+                            <p>Blog</p>
                         </div>
-                        <div class='intro'>
-                            <div class='name'>
-                                <h1>
-                                    <span class='bold'>Tanishka</span>
-                                    Talwar
-                                </h1>
-                                <div class='social'>
-                                    <i class="fa-brands fa-linkedin-in"></i>
-                                    <i class="fa-brands fa-github"></i>
-                                    <i class="fa-brands fa-facebook"></i>
-                                </div>
-                            </div>
-                            <img src='images/flower.jpg' alt='Flowers Image' />
-                            <p class="attribute">Photo by <a href="https://unsplash.com/@hanchenxu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Han Chenxu</a> on <a href="https://unsplash.com/images/nature/flower?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </div>
+                
+                </div>
+                <div class='nav-second-row'>
+                
+                    <div class='nav-box three' onclick='showDiv(projects)' tabindex='0'>
+                        <div>
+                            <p>03</p>
+                            <hr />
+                            <p>Projects</p>
+                        </div>
+                    </div>
+                
+                    <div class='nav-box four' onclick='showDiv(skills)' tabindex='0'>
+                        <div>
+                            <p>04</p>
+                            <hr />
+                            <p>Skills</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+
+            <section class='links'>
+                <div id='about'>
+                    <div class='header'>
+                        <button class='back-btn' onclick='hideDiv(about)'><i class='fa-solid fa-circle-arrow-left'></i></button>
+                        <h2>About</h2>
+                    </div>
+
+                    <div class='intro'>
+                        <div class='name'>
+                            <p>I am a Fullstack developer</p>
+                            <h1>Tanishka <br/> Talwar</h1>
+                            <p><span class='bold'>Date of Birth</span> : 2nd October 2000</p>
+                            <p><span class='bold'>Education</span> : Graduate</p>
+                            <p><span class='bold'>Interests</span> : Travelling</p>
+                            <p><span class='bold'>Languages Known</span> : Hindi, English</p>
+                        </div>
+                        <img src='images/flower.jpg' alt='Flowers Image' />
+                        <p class="attribute">Photo by <a href="https://unsplash.com/@hanchenxu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Han Chenxu</a> on <a href="https://unsplash.com/images/nature/flower?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                        </p>
+                    </div>
+
+                    <p class='about'>
+                        If I am to define myself in two words that would be curious and grateful. That is how I percieve
+                        the world, with curiosity and gratefulness. That curiosity about computers had lead me to the love
+                        of my life 'coding'. Coding is something that sets me free. When I code it feels like I am in a
+                        whole new world of my own with the power of creating anything at my fingertips. I would love to
+                        have a chance to use my skills to create a difference in the world.
+                    </p>
+
+                    <div class='contact'>
+                        <div>
+                            <h2>Where to find me ?</h2>
+                            <p><i class="fa-solid fa-location-dot"></i> Saharanpur, Uttar Pradesh</p>
+                            <p><i class="fa-solid fa-mobile-screen-button"></i> 8630755140</p>
+                            <p><i class="fa-solid fa-envelope"></i> tanishkatalwar18@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id='blog'>
+                    <div class='header'>
+                        <button class='back-btn' onclick='hideDiv(blog)'><i class='fa-solid fa-circle-arrow-left'></i></button>
+                        <h2>Blog</h2>
+                    </div>
+
+                    <p class='intro-line'>Best way to expand your knowledge is to share it with others. I want to help other developers
+                        with topic that I struggled with or have good understanding about.
+                    </p>
+
+                    <a href='https://medium.com/@tanishkatalwar18_68270/create-your-first-express-server-160d4d765f9d' target="_blank">
+                        <img src='./images/blog1.png'/>
+                    </a>
+
+                    <a href='https://medium.com/@tanishkatalwar18_68270/know-these-commands-to-start-your-git-journey-3ff2d7e5b32b'>
+                        <img src='./images/blog2.png'/>
+                    </a>
+
+                    <a href='https://medium.com/@tanishkatalwar18_68270/getting-started-with-git-in-no-time-d45ca03b2090'>
+                        <img src='./images/blog3.png'/>
+                    </a>
+
+                    <a href='https://medium.com/@tanishkatalwar18_68270/10-js-array-methods-to-be-more-productive-85247ce286ef'>
+                        <img src='./images/blog4.png'/>
+                    </a>
+                </div>
+
+                <div id='projects'>
+                    <div class='header'>
+                        <button class='back-btn' onclick='hideDiv(projects)'><i class='fa-solid fa-circle-arrow-left'></i></button>
+                        <h2>Projects</h2>
+                    </div>
+                    
+                    
+                    <p class='meta'>These are some of the projects that I built during my learning journey. To see more 
+                        projects, you can check out my <a href='https://tanishka-2000.github.io/portfolio_new/' target='_blank'>
+                        portfolio</a>.
+
+                    </p>                           
+
+                    <div class='project'>  
+                        <img src='images/inventory.png' alt='project' />                             
+                        <div>
+                            <h2>Inventory App</h2>
+                            <p>
+                                This is a fullstack application which lets you manage your inventory for a grocery store. Home
+                                page of this app provide you with a list of categories to view. You can inspect and update any
+                                category. Basically this app let you perform all four CRUD operations on each food category and
+                                on each food item under any category. It uses node along with express to serve pages and ejs as
+                                view engine.
+                            </p>
+                            <p class='project-links'>
+                                <a><i class='fa-brands fa-github'></i></a>
+                                <a><i class='fa-solid fa-arrow-up-right-from-square'></i></a>
                             </p>
                         </div>
-                        <p class='about'>
-                            If I am to define myself in two words that would be curious and grateful. That is how I percieve
-                            the world, with curiosity and gratefulness. That curiosity about computers had lead me to the love
-                            of my life 'coding'. Coding is something that sets me free. When I code it feels like I am in a
-                            whole new world of my own with the power of creating anything at my fingertips. I would love to
-                            have a chance to use my skills to create a difference in the world. This is something I would still
-                            be doing even if I have all the wealth in the world.
-                        </p>
-                        <div class='contact'>
-                            <div>
-                                <h2>Where to find me ?</h2>
-                                <p><i class="fa-solid fa-location-dot"></i> Saharanpur, Uttar Pradesh</p>
-                                <p><i class="fa-solid fa-mobile-screen-button"></i> 8630755140</p>
-                                <p><i class="fa-solid fa-envelope"></i> tanishkatalwar18@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id='blog'>
-                        <div class='header'>
-                            <button class='back-btn' onclick='hideDiv(blog)'><i class='fa-solid fa-circle-arrow-left'></i></button>
-                            <h2>Blog</h2>
-                        </div>
-
-                        <p class='intro-line'>Best way to expand your knowledge is to share it with others. I want to help other developers
-                            with topic that I struggled with or have good understanding about.
-                        </p>
-
-                        <a href='https://medium.com/@tanishkatalwar18_68270/create-your-first-express-server-160d4d765f9d'>
-                            <img src='./images/blog1.png'/>
-                        </a>
-
-                        <a href='https://medium.com/@tanishkatalwar18_68270/know-these-commands-to-start-your-git-journey-3ff2d7e5b32b'>
-                            <img src='./images/blog2.png'/>
-                        </a>
-
-                        <a href='https://medium.com/@tanishkatalwar18_68270/getting-started-with-git-in-no-time-d45ca03b2090'>
-                            <img src='./images/blog3.png'/>
-                        </a>
-
-                        <a href='https://medium.com/@tanishkatalwar18_68270/10-js-array-methods-to-be-more-productive-85247ce286ef'>
-                            <img src='./images/blog4.png'/>
-                        </a>
-                    </div>
-
-                    <div id='projects'>
-                        <div class='header'>
-                            <button class='back-btn' onclick='hideDiv(projects)'><i class='fa-solid fa-circle-arrow-left'></i></button>
-                            <h2>Projects</h2>
-                        </div>
                         
+                    </div>
+
+                    <div class='project'>
                         
-                        <p class='meta'>These are some of the projects that I built during my learning journey. To see more 
-                            projects, you can check out my<a href='https://tanishka-2000.github.io/portfolio_new/' target='_blank'>
-                            portfolio</a>.
-
-                        </p>                           
-
-                        <div class='project'>  
-                            <img src='images/inventory.png' alt='project' />                             
-                            <div>
-                                <h2>Inventory App</h2>
-                                <p>
-                                    This is a fullstack application which lets you manage your inventory for a grocery store. Home
-                                    page of this app provide you with a list of categories to view. You can inspect and update any
-                                    category. Basically this app let you perform all four CRUD operations on each food category and
-                                    on each food item under any category. It uses node along with express to serve pages and ejs as
-                                    view engine.
-                                </p>
-                                <p class='project-links'>
-                                    <a><i class='fa-brands fa-github'></i></a>
-                                    <a><i class='fa-solid fa-arrow-up-right-from-square'></i></a>
-                                </p>
-                            </div>
-                            
+                        <div>
+                            <h2>Odinbook</h2>
+                            <p>
+                                This is an attempt to create a facebook clone with only core functionalities. The frontend of
+                                this project is created using React and also supports client side routing, while for backend
+                                I have used node along with express to create REST APIs. This project is created using
+                                JAMstack architecture.
+                            </p>
+                            <p class='project-links'>
+                                <a><i class='fa-brands fa-github'></i></a>
+                                <a><i class='fa-solid fa-arrow-up-right-from-square'></i></a>
+                            </p>
                         </div>
-
-                        <div class='project'>
-                            
-                            <div>
-                                <h2>Odinbook</h2>
-                                <p>
-                                    This is an attempt to create a facebook clone with only core functionalities. The frontend of
-                                    this project is created using React and also supports client side routing, while for backend
-                                    I have used node along with express to create REST APIs. This project is created using
-                                    JAMstack architecture.
-                                </p>
-                                <p class='project-links'>
-                                    <a><i class='fa-brands fa-github'></i></a>
-                                    <a><i class='fa-solid fa-arrow-up-right-from-square'></i></a>
-                                </p>
-                            </div>
-                            <img src='images/odinbook2.png' alt='project' />
-                        </div>
-
-                        <div class='project'>   
-                            <img src='images/airbnb.png' alt='project' />                            
-                            <div>
-                                <h2>Airbnb Clone</h2>
-                                <p>
-                                    This is a frontend project. I have tried to replicate the UI of airbnb website. It is a single
-                                    page application (SPA) along with client side routing created using React. I have used a third
-                                    party APIs to fetch hotels data and images. This site allows you to search hotels of any place
-                                    using search bar or selecting any category from scrollbar.
-                                </p>
-                                <p class='project-links'>
-                                    <a><i class='fa-brands fa-github'></i></a>
-                                    <a><i class='fa-solid fa-arrow-up-right-from-square'></i></a>
-                                </p>
-                            </div>                             
-                        </div>
-
+                        <img src='images/odinbook2.png' alt='project' />
                     </div>
 
-                    <div id='skills'>
-                        <div class='header'>
-                            <button class='back-btn' onclick='hideDiv(skills)'><i class='fa-solid fa-circle-arrow-left'></i></button>
-                            <h2>Skills</h2>
+                    <div class='project'>   
+                        <img src='images/airbnb.png' alt='project' />                            
+                        <div>
+                            <h2>Airbnb Clone</h2>
+                            <p>
+                                This is a frontend project. I have tried to replicate the UI of airbnb website. It is a single
+                                page application (SPA) along with client side routing created using React. I have used a third
+                                party APIs to fetch hotels data and images. This site allows you to search hotels of any place
+                                using search bar or selecting any category from scrollbar.
+                            </p>
+                            <p class='project-links'>
+                                <a><i class='fa-brands fa-github'></i></a>
+                                <a><i class='fa-solid fa-arrow-up-right-from-square'></i></a>
+                            </p>
+                        </div>                             
+                    </div>
+
+                </div>
+
+                <div id='skills'>
+                    <div class='header'>
+                        <button class='back-btn' onclick='hideDiv(skills)'><i class='fa-solid fa-circle-arrow-left'></i></button>
+                        <h2>Skills</h2>
+                    </div>
+                    <p>I am a self-taught fullstack developer who believes that every moment is an opportunity to learn something new.</p>
+                    <div class='skills-grid'>
+                        <div>
+                            
+                            <h3><i class="fa-regular fa-star"></i> HTML</h3>
+                            <p>Building Block of a website</p>
                         </div>
-                        <p>I am a self-taught fullstack developer who believes that every moment is an opportunity to learn something new.</p>
-                        <div class='skills-grid'>
-                            <div>
-                                
-                                <h3><i class="fa-regular fa-star"></i> HTML</h3>
-                                <p>Building Block of a website</p>
-                            </div>
 
-                            <div>
-                                <h3><i class="fa-regular fa-star"></i> CSS</h3>
-                                <p>Cascading Style Sheet</p>
-                            </div>
+                        <div>
+                            <h3><i class="fa-regular fa-star"></i> CSS</h3>
+                            <p>Cascading Style Sheet</p>
+                        </div>
 
-                            <div>
-                                <h3><i class="fa-regular fa-star"></i> Javascript</h3>
-                                <p>Add Behaviour to your website</p>
-                            </div>
+                        <div>
+                            <h3><i class="fa-regular fa-star"></i> Javascript</h3>
+                            <p>Add Behaviour to your website</p>
+                        </div>
 
-                            <div>
-                                <h3><i class="fa-regular fa-star"></i> Webpack</h3>
-                                <p>Package Bundler</p>
-                            </div>
+                        <div>
+                            <h3><i class="fa-regular fa-star"></i> Webpack</h3>
+                            <p>Package Bundler</p>
+                        </div>
 
-                            <div>
-                                <h3><i class="fa-regular fa-star"></i> React</h3>
-                                <p>Frontend Framework</p>
-                            </div>
+                        <div>
+                            <h3><i class="fa-regular fa-star"></i> React</h3>
+                            <p>Frontend Framework</p>
+                        </div>
 
-                            <div>
-                                <h3><i class="fa-regular fa-star"></i> Git</h3>
-                                <p>Version Control System (VCS)</p>
-                            </div>
+                        <div>
+                            <h3><i class="fa-regular fa-star"></i> Git</h3>
+                            <p>Version Control System (VCS)</p>
+                        </div>
 
-                            <div>
-                                <h3><i class="fa-regular fa-star"></i> Firebase</h3>
-                                <p>Backend as a Service (BaaS)</p>
-                            </div>
+                        <div>
+                            <h3><i class="fa-regular fa-star"></i> Firebase</h3>
+                            <p>Backend as a Service (BaaS)</p>
+                        </div>
 
-                            <div>
-                                <h3><i class="fa-regular fa-star"></i> Jest</h3>
-                                <p>Javascript Testing Library</p>
-                            </div>
+                        <div>
+                            <h3><i class="fa-regular fa-star"></i> Jest</h3>
+                            <p>Javascript Testing Library</p>
+                        </div>
 
-                            <div>
-                                <h3><i class="fa-regular fa-star"></i> Mongodb</h3>
-                                <p>No SQL Database</p>
-                            </div>
+                        <div>
+                            <h3><i class="fa-regular fa-star"></i> Mongodb</h3>
+                            <p>No SQL Database</p>
+                        </div>
 
-                            <div>
-                                <h3><i class="fa-regular fa-star"></i> Node</h3>
-                                <p>Backend</p>
-                            </div>
+                        <div>
+                            <h3><i class="fa-regular fa-star"></i> Node</h3>
+                            <p>Backend</p>
+                        </div>
 
-                            <div>
-                                <h3><i class="fa-regular fa-star"></i> Express</h3>
-                                <p>Node Framework</p>
-                            </div>
+                        <div>
+                            <h3><i class="fa-regular fa-star"></i> Express</h3>
+                            <p>Node Framework</p>
+                        </div>
 
-                            <div>
-                                <h3><i class="fa-regular fa-star"></i> Responsive Design</h3>
-                                <p>CSS Media Queries</p>
-                            </div>
+                        <div>
+                            <h3><i class="fa-regular fa-star"></i> Responsive Design</h3>
+                            <p>CSS Media Queries</p>
+                        </div>
 
-                            <div>
-                                <h3><i class="fa-regular fa-star"></i> REST APIs</h3>
-                                <p>JAMstack Architecture</p>
-                            </div>
+                        <div>
+                            <h3><i class="fa-regular fa-star"></i> REST APIs</h3>
+                            <p>JAMstack Architecture</p>
+                        </div>
 
-                            <div>
-                                <h3><i class="fa-regular fa-star"></i> Passport</h3>
-                                <p>Javascript Library for Authentication</p>
-                            </div>
+                        <div>
+                            <h3><i class="fa-regular fa-star"></i> Passport</h3>
+                            <p>Javascript Library for Authentication</p>
                         </div>
                     </div>
-                </section>
+                </div>
+            </section>
         </div>
         <script src='script.js' defer charset='utf-8'></script>
     </body>

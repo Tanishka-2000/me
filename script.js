@@ -1,3 +1,4 @@
+const skilldivs = document.querySelectorAll('#skills .skills-grid > div');
 let prev = null;
 
 function hideDiv(e){
@@ -11,3 +12,7 @@ function showDiv(curr){
     prev = curr;
 }
 
+for(let i = 0; i < skilldivs.length; i = i+2){
+    skilldivs[i].style.transitionDelay = `${200 + i * 50}ms`;
+    skilldivs[i+1].style.transitionDelay = `${200 + i * 50}ms`;
+}
