@@ -13,6 +13,7 @@
     <body>
         <div class='container'>
             <nav class='mobile-nav'>
+                <li class='logo'>TT</li>
                 <li>
                     <a href='#about'>about</a>
                 </li>
@@ -123,102 +124,6 @@
                     </div>
                 </div>
 
-                <div id='blog'>
-                    <div class='header'>
-                        <button class='back-btn' onclick='hideDiv(blog)'><i class='fa-solid fa-circle-arrow-left'></i></button>
-                        <h2>Blog</h2>
-                    </div>
-
-                    <p class='intro-line'>Best way to expand your knowledge is to share it with others. I want to help other developers
-                        with topic that I struggled with or have good understanding about.
-                    </p>
-
-                    <a href='https://medium.com/@tanishkatalwar18_68270/create-your-first-express-server-160d4d765f9d' target="_blank">
-                        <img src='./images/blog1.png'/>
-                    </a>
-
-                    <a href='https://medium.com/@tanishkatalwar18_68270/know-these-commands-to-start-your-git-journey-3ff2d7e5b32b'>
-                        <img src='./images/blog2.png'/>
-                    </a>
-
-                    <a href='https://medium.com/@tanishkatalwar18_68270/getting-started-with-git-in-no-time-d45ca03b2090'>
-                        <img src='./images/blog3.png'/>
-                    </a>
-
-                    <a href='https://medium.com/@tanishkatalwar18_68270/10-js-array-methods-to-be-more-productive-85247ce286ef'>
-                        <img src='./images/blog4.png'/>
-                    </a>
-                </div>
-
-                <div id='projects'>
-                    <div class='header'>
-                        <button class='back-btn' onclick='hideDiv(projects)'><i class='fa-solid fa-circle-arrow-left'></i></button>
-                        <h2>Projects</h2>
-                    </div>
-                    
-                    
-                    <p class='meta'>These are some of the projects that I built during my learning journey. To see more 
-                        projects, you can check out my <a href='https://tanishka-2000.github.io/portfolio_new/' target='_blank'>
-                        portfolio</a>.
-
-                    </p>                           
-
-                    <div class='project'>  
-                        <img src='images/inventory.png' alt='project' />                             
-                        <div>
-                            <h2>Inventory App</h2>
-                            <p>
-                                This is a fullstack application which lets you manage your inventory for a grocery store. Home
-                                page of this app provide you with a list of categories to view. You can inspect and update any
-                                category. Basically this app let you perform all four CRUD operations on each food category and
-                                on each food item under any category. It uses node along with express to serve pages and ejs as
-                                view engine.
-                            </p>
-                            <p class='project-links'>
-                                <a><i class='fa-brands fa-github'></i></a>
-                                <a><i class='fa-solid fa-arrow-up-right-from-square'></i></a>
-                            </p>
-                        </div>
-                        
-                    </div>
-
-                    <div class='project'>
-                        
-                        <div>
-                            <h2>Odinbook</h2>
-                            <p>
-                                This is an attempt to create a facebook clone with only core functionalities. The frontend of
-                                this project is created using React and also supports client side routing, while for backend
-                                I have used node along with express to create REST APIs. This project is created using
-                                JAMstack architecture.
-                            </p>
-                            <p class='project-links'>
-                                <a><i class='fa-brands fa-github'></i></a>
-                                <a><i class='fa-solid fa-arrow-up-right-from-square'></i></a>
-                            </p>
-                        </div>
-                        <img src='images/odinbook2.png' alt='project' />
-                    </div>
-
-                    <div class='project'>   
-                        <img src='images/airbnb.png' alt='project' />                            
-                        <div>
-                            <h2>Airbnb Clone</h2>
-                            <p>
-                                This is a frontend project. I have tried to replicate the UI of airbnb website. It is a single
-                                page application (SPA) along with client side routing created using React. I have used a third
-                                party APIs to fetch hotels data and images. This site allows you to search hotels of any place
-                                using search bar or selecting any category from scrollbar.
-                            </p>
-                            <p class='project-links'>
-                                <a><i class='fa-brands fa-github'></i></a>
-                                <a><i class='fa-solid fa-arrow-up-right-from-square'></i></a>
-                            </p>
-                        </div>                             
-                    </div>
-
-                </div>
-
                 <div id='skills'>
                     <div class='header'>
                         <button class='back-btn' onclick='hideDiv(skills)'><i class='fa-solid fa-circle-arrow-left'></i></button>
@@ -297,7 +202,104 @@
                             <p>Javascript Library for Authentication</p>
                         </div>
                     </div>
+                </div>                
+
+                <div id='projects'>
+                    <div class='header'>
+                        <button class='back-btn' onclick='hideDiv(projects)'><i class='fa-solid fa-circle-arrow-left'></i></button>
+                        <h2>Projects</h2>
+                    </div>
+                    
+                    
+                    <p class='intro'>These are some of the projects that I built during my learning journey. To see more 
+                        projects, you can check out my <a href='https://tanishka-2000.github.io/portfolio_new/' target='_blank'>
+                        portfolio</a>.
+
+                    </p>                           
+
+                    <div class='project'>  
+                        <img src='images/inventory.png' alt='project' />                             
+                        <div>
+                            <h2>Inventory App</h2>
+                            <p>
+                                This is a fullstack application which lets you manage your inventory for a grocery store. Home
+                                page of this app provide you with a list of categories to view. You can inspect and update any
+                                category. Basically this app let you perform all four CRUD operations on each food category and
+                                on each food item under any category. It uses node along with express to serve pages and ejs as
+                                view engine.
+                            </p>
+                            <p class='project-links'>
+                                <a><i class='fa-brands fa-github'></i></a>
+                                <a><i class='fa-solid fa-arrow-up-right-from-square'></i></a>
+                            </p>
+                        </div>
+                        
+                    </div>
+
+                    <div class='project'>
+                        
+                        <div>
+                            <h2>Odinbook</h2>
+                            <p>
+                                This is an attempt to create a facebook clone with only core functionalities. The frontend of
+                                this project is created using React and also supports client side routing, while for backend
+                                I have used node along with express to create REST APIs. This project is created using
+                                JAMstack architecture.
+                            </p>
+                            <p class='project-links'>
+                                <a><i class='fa-brands fa-github'></i></a>
+                                <a><i class='fa-solid fa-arrow-up-right-from-square'></i></a>
+                            </p>
+                        </div>
+                        <img src='images/odinbook2.png' alt='project' />
+                    </div>
+
+                    <div class='project'>   
+                        <img src='images/airbnb.png' alt='project' />                            
+                        <div>
+                            <h2>Airbnb Clone</h2>
+                            <p>
+                                This is a frontend project. I have tried to replicate the UI of airbnb website. It is a single
+                                page application (SPA) along with client side routing created using React. I have used a third
+                                party APIs to fetch hotels data and images. This site allows you to search hotels of any place
+                                using search bar or selecting any category from scrollbar.
+                            </p>
+                            <p class='project-links'>
+                                <a><i class='fa-brands fa-github'></i></a>
+                                <a><i class='fa-solid fa-arrow-up-right-from-square'></i></a>
+                            </p>
+                        </div>                             
+                    </div>
+
                 </div>
+
+                <div id='blog'>
+                    <div class='header'>
+                        <button class='back-btn' onclick='hideDiv(blog)'><i class='fa-solid fa-circle-arrow-left'></i></button>
+                        <h2>Blog</h2>
+                    </div>
+
+                    <p class='intro-line'>Best way to expand your knowledge is to share it with others. I want to help other developers
+                        with topic that I struggled with or have good understanding about.
+                    </p>
+
+                    <a href='https://medium.com/@tanishkatalwar18_68270/create-your-first-express-server-160d4d765f9d' target="_blank">
+                        <img src='./images/blog1.png'/>
+                    </a>
+
+                    <a href='https://medium.com/@tanishkatalwar18_68270/know-these-commands-to-start-your-git-journey-3ff2d7e5b32b'>
+                        <img src='./images/blog2.png'/>
+                    </a>
+
+                    <a href='https://medium.com/@tanishkatalwar18_68270/getting-started-with-git-in-no-time-d45ca03b2090'>
+                        <img src='./images/blog3.png'/>
+                    </a>
+
+                    <a href='https://medium.com/@tanishkatalwar18_68270/10-js-array-methods-to-be-more-productive-85247ce286ef'>
+                        <img src='./images/blog4.png'/>
+                    </a>
+                </div>
+
             </section>
         </div>
         <script src='script.js' defer charset='utf-8'></script>
