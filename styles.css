@@ -13,6 +13,37 @@ body{
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+@media (width < 720px) {
+    ::-webkit-scrollbar {
+        width: 5px;
+    }  
+
+    ::-webkit-scrollbar-thumb {
+        background: #333;
+    }
+}
 .container{
     background-color: rgba(0, 0, 0,.85);
     color: #ccc;
@@ -25,9 +56,11 @@ body{
     overflow: hidden;
 }
 
-.mobile-nav{
+.mobile-nav,
+.mobile-contact{
     display: none;
 }
+
 /* ============= nav=========== */
 
 .navigation{
@@ -396,8 +429,11 @@ section.heading .social a{
 
 @media (width < 720px) {
     section.heading{
+        height: 50%;
         position: static;
         margin: 60px auto;
+        display: grid;
+        place-content: center;
     }
 
     section.heading .about{
@@ -490,6 +526,7 @@ section.heading .social a{
         display: block;
         font-size: 1rem;
         padding: 5px;
+        border-top: 1px solid #444;
         border-bottom: 1px solid #444;
     }
 
@@ -507,7 +544,7 @@ section.heading .social a{
 /* -------------about------------- */
 
 #about{
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 #about .intro{
@@ -565,25 +602,25 @@ section.heading .social a{
     line-height: 1.3;
 }
 
-#about .contact{
+.contact{
     background-image: url('images/map.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
 }
 
-#about .contact > div{
+.contact > div{
     background-color: rgba(0, 0, 0, .6);
     padding: 50px 0;
     color: #fff;
 }
 
-#about .contact h2{
+.contact h2{
     font-size: 2rem;
     margin: 20px 0;
 }
 
-#about .contact p{
+.contact p{
     margin-top: 7px;
     font-size: 1.1rem;
     font-weight: 300;
@@ -602,14 +639,14 @@ section.heading .social a{
         border-top: 1px solid #333;
         border-bottom: 1px solid #333;
         margin: 10px 0;
-        padding: 20px 0;
+        padding: 10px 0;
         font-size: 1.5rem;
         font-weight: 500;
         color: #999;
     }
 
     #about .intro img{
-        width: 200px;
+        width: 48%;
     }
 
     #about .intro .attribute{
@@ -631,14 +668,32 @@ section.heading .social a{
         line-height:normal;
     }
     #about .contact{
-        display: none;
+       display: none;
+    }
+
+    .mobile-contact{
+        display: block;
+    }
+
+    .contact > div{
+        padding: 30px 0;
+    }
+    
+    .contact h2{
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+    
+    .contact p{
+        font-size: .9rem;
+        margin-top: 4px;
     }
 }
 
 /* ---------projects------- */
 
 #projects{
-    overflow-y: scroll;
+    overflow-y: auto;
     padding: 10px;
 }
 
@@ -661,6 +716,9 @@ section.heading .social a{
     padding: 0 30px 30px;
     border-bottom: 1px solid #aaa;
     gap: 20px;
+}
+#projects .project.project:nth-last-of-type(1){
+    border-bottom: none;
 }
 
 
@@ -695,10 +753,10 @@ section.heading .social a{
 
 @media (width < 720px) {
     #projects p.intro{
-        width: 90%;
+        width: 94%;
         text-align: center;
         font-size: 1rem;
-        margin: 20px auto;
+        margin: 20px auto 30px;
     }
 
     #projects p.intro a{
@@ -713,17 +771,29 @@ section.heading .social a{
         display: flex;
         font-size: 1rem;
         align-items: center;
-        margin: 50px 10px;
+        margin: 20px 10px;
         padding: 0 0px 10px;
         border-bottom: 1px solid #aaa;
         gap: 10px;
+    }
+
+    #projects .project:nth-of-type(3) > div{
+        order: 2;
+    }
+
+    #projects .project h2{
+        margin: 10px 0;
+    }
+
+    #projects .project img{
+        max-width: 98%;
     }
 
 }
 
 /* ----------skills------------ */
 #skills{
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 #skills > p{
@@ -773,13 +843,16 @@ section.heading .social a{
     #skills .skills-grid{
         margin: 20px 10px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, minmax(130px, 300px));
+        gap: 20px;
         justify-content: center;
     }
 
     #skills .skills-grid > div{
-        width: 180px;
+        width: 100%;
         margin: 10px 0;
+        font-size: .9rem;
+        color: #888;
         padding: 0;
         transform: scaleY(1);
         opacity: 1;
@@ -790,6 +863,7 @@ section.heading .social a{
 
 #blog{
     overflow-x: hidden;
+    overflow-y: auto;
 }
 
 #blog .intro-line{
@@ -831,7 +905,7 @@ section.heading .social a{
     #blog a{
         display:block;
         text-align: center;
-        margin: 30px auto;
+        margin: 10px auto;
         opacity: 1;
     }
     
@@ -840,10 +914,10 @@ section.heading .social a{
     }
     
     #blog a:nth-of-type(2n){
-        transform: translateX(0px);
+        transform: translateX(0);
     }
 
     #blog a img{
-        width: 95%;
+        width: 90%;
     }
 }
