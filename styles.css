@@ -705,6 +705,7 @@ section.heading .social a{
 }
 
 #projects p.intro a{
+    font-weight: 700;
     color: #000;
 }
 
@@ -717,6 +718,15 @@ section.heading .social a{
     border-bottom: 1px solid #aaa;
     gap: 20px;
 }
+
+#projects .project a{
+    color: #444;
+}
+
+#projects .project a:hover{
+    color: #000;
+}
+
 #projects .project.project:nth-last-of-type(1){
     border-bottom: none;
 }
