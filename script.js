@@ -12,6 +12,7 @@ function showDiv(curr){
     prev = curr;
 }
 
+// add increasing delay on skills
 for(let i = 0; i < skilldivs.length; i = i+2){
     skilldivs[i].style.transitionDelay = `${200 + i * 50}ms`;
     skilldivs[i+1].style.transitionDelay = `${200 + i * 50}ms`;
