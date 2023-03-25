@@ -553,7 +553,7 @@ section.heading .social a{
     align-items: center;
     margin: 50px;
     position: relative;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 #about .intro .name{
@@ -597,9 +597,7 @@ section.heading .social a{
     width: 90%;
     color: #333;
     margin: 100px auto;
-    font-size: 1.3rem;
-    /* letter-spacing: 1.2px;
-    line-height: 1.3; */
+    font-size: 1rem;
 }
 
 #about .about h3{
@@ -724,6 +722,32 @@ section.heading .social a{
     border-bottom: 1px solid #aaa;
     gap: 20px;
 }
+
+/* fade in animation start */
+#projects .project > *{
+    transition: all 800ms;
+    opacity: 0;
+}
+
+#projects .project > *:nth-child(1){
+    transform: translateX(-200px);
+}
+
+#projects .project > *:nth-child(2){
+    transform: translateX(200px);
+}
+
+#projects.show .project > *:nth-child(1){
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+#projects.show .project > *:nth-child(2){
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+/* fade in animation end */
 
 #projects .project a{
     color: #444;
